@@ -53,5 +53,5 @@ bot.on('guildMemberRemove', member => {
     console.log("Leave Message Sent")
 });
 
-const token = process.env.BOT_TOKEN;
-bot.login("bot-token.here")
+client.login(process.env.BOT_TOKEN);
+
