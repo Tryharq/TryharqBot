@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'hoi') {
-    msg.reply('Ik ben geil');
+  if (msg.content === '!youtube') {
+    msg.reply('https://www.youtube.com/channel/UCfYEE7bJlDfZSlOQYfu3ksA?view_as=subscriber');
   }
 });
 
