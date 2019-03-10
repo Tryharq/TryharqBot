@@ -5,11 +5,16 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', msg => {
-  if (msg.content === '!youtube') {
-    msg.reply('https://www.youtube.com/channel/UCfYEE7bJlDfZSlOQYfu3ksA?view_as=subscriber');
-  }
-});
+client.on("guildMemberAdd",Member => 
+          vare role = member.guild.role.find ("name", "Bezoeker");
+member.addrole (role)
+  
+})
+
+claint.on ("GuildMemberRemove,member" => {
+  
+})
+  
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
