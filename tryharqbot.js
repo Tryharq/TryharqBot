@@ -1,9 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('I am ready!');
-
 bot.on('ready', () => {
     console.log("Turning On Bot")
     bot.user.setActivity("New Users", {type: 2});
@@ -54,13 +51,6 @@ bot.on('guildMemberRemove', member => {
 bot.on('guildMemberRemove', member => {
     console.log(`${member}` + "has left" + `${member.guild.name}` + "Sending leave message now")
     console.log("Leave Message Sent")
-
-});
-
-client.on('message', message => {
-    if (message.content === '!youtube') {
-    	message.reply('https://www.youtube.com/channel/UCfYEE7bJlDfZSlOQYfu3ksA?view_as=subscriber');
-  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
