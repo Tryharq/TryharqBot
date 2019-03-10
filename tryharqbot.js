@@ -5,16 +5,21 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on("guildMemberAdd",Member => 
-          vare role = member.guild.role.find ("name", "Bezoeker");
-member.addrole (role)
-  
-})
+client.on("GuildMemberAdd".function(message) {
 
-claint.on ("GuildMemberRemove,member" => {
-  
-})
-  
+  let guild = message.guild;
+  let member = message;
+  let membercounter = client.users.size;
+          
+  const embed = new discord.RichEmed()
+  .setcolor(0xffffff)
+  .setTitle('Tryharq_ & Basplayer Community - welcome')
+  .setdescription('hallo ${member.user}, welkom op Tryharq_ & Basplayer Community.')
+  .setThumbnail(member.user.avatarURL)
+  .setfooter(footer)
 
+  member.guild.channels.find('name','welcome').send({ embed: embed }):
+});
+          
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
