@@ -1,8 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-// Global Settings
-const prefix = '-'; // This is the prefix, you can change it to whatever you want.
+client.on('ready', () => {
+    console.log('I am ready!');
+
+ // Global Settings
+const prefix = '~'; // This is the prefix, you can change it to whatever you want.
 
 // Listener Event: Runs whenever a message is received.
 bot.on('message', message => {
@@ -64,10 +67,7 @@ bot.on('ready', () => {
 
     // We can post into the console that the bot launched.
     console.log('Bot started.');
-
-client.on('ready', () => {
-    console.log('I am ready!');
-
+    
 });
 
 client.on('message', message => {
