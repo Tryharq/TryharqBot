@@ -13,7 +13,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!staff') {
-    	message.reply('Owner tryharq_');
+    	message.reply('Owner tryharq_ & BASplayer4');
     }
 });
 
