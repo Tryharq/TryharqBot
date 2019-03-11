@@ -13,8 +13,8 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!staff') {
-    	message.reply('Onwer tryharq_')
-  	    message.reply('Onwer BASplayer');
+    	message.reply('Onwer tryharq_& BASplayer');
+  	    
     }
 
 // THIS  MUST  BE  THIS  WAY
