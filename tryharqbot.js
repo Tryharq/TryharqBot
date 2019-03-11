@@ -66,20 +66,8 @@ bot.on('message', message => {
 bot.on('ready', () => {
 
     // We can post into the console that the bot launched.
-    console.log('Bot started.');
-    
-});
+    console.log('Bot started.');    
 
-client.on('message', message => {
-    if (message.content === '!youtube') {
-    	message.reply('https://www.youtube.com/channel/UCfYEE7bJlDfZSlOQYfu3ksA?view_as=subscriber');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === '!staff') {
-    	message.reply('Owner tryharq_ & BASplayer4');
-    }
 });
 
 // THIS  MUST  BE  THIS  WAY
