@@ -8,7 +8,11 @@ client.on('ready', () => {
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!');
-  }
+    
 });
+
+ bot.on('ready',function(){
+   consol.log"ready";
+   });
 
 client.login('token');
