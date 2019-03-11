@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'hoi') {
-    	message.reply('kanker op');
+    if (message.content === '!youtube') {
+    	message.reply('https://www.youtube.com/channel/UCfYEE7bJlDfZSlOQYfu3ksA?view_as=subscriber');
   	}
 });
 
