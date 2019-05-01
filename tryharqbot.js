@@ -1,17 +1,15 @@
-const Discord = require('discord.js')
-const client = new Discord.Client()
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`)
-})
-ar bot = new Discord.Client();
+ console.log(`Logged in as ${client.user.tag}!`);
+ });
 
-bot.on("guildMemberAdd", member => {
-    let mem = member.guild
-    mem.defaultChannel.sendMessage(member.user + " welcome to the server!"); 
-
-}
-
-});
+client.on('message', msg => {
+ if (msg.content === 'ping') {
+ msg.reply('pong');
+ }
+ });
 
 
 // THIS  MUST  BE  THIS  WAY
