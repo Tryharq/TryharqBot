@@ -10,12 +10,5 @@ client.on('message', msg => {
    }
 }) 
 
-var bot = new Discord.Client();
-
-bot.on("guildMemberAdd", member => {
-    let mem = member.guild
-    mem.defaultChannel.sendMessage(member.user + " welcome to the server!"); 
-});
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
